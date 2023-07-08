@@ -1,0 +1,72 @@
+//- html
+//-     head
+//-         title= title 
+//-         link(rel="stylesheet" href="/style.css") 
+//-     body 
+//-         <div class ="news_container">
+//-         <div class='header_plus'>
+//-             h3(style="margin: 0;")= title
+//-         <div class= head_card>
+//-         div.edit_button(data-news-index= `${id}`)
+//-         if canedit
+//-           a(class="btn_edit" href=`${id}/edit`) &#9998;
+//-         else 
+//-           a(class="btn_edit" href=`#` style="color: gray;") &#9998;
+//-         if canedit
+//-           div.close-button(data-news-index=`${id}` onclick=`removeNewsFrom(${id})`) &#10006;
+//-         else 
+//-           div.close-button(data-news-index=`${id}` style="color: gray;") &#10006;
+//-         </div>
+//-         </div>
+//-             p= content
+//-         div(class="tags")= Array.from(tags).join(', ')
+//-         div(class="date")= date
+//-         div(class="date")= username
+//-         div(class="date")= canedit
+//-         </div>
+//-         <div class="two_btn">
+//-             <button class="edit_news" data-news-index= "${index}">
+//-         a(class="btn_edit_news" href=`${id}/edit`) Edit
+//-             </button> 
+//-         div(class="remove_news" data-news-index=`${id}` onclick=`removeNewsFrom(${id})`) Remove
+//-         </div> 
+//-     script(src="/exam.js") 
+
+
+
+
+
+
+
+html
+  head
+    title= title 
+    link(rel="stylesheet" href="/style.css") 
+  body 
+    div.news_container
+      div.header_plus
+        h3(style="margin: 0;")= title
+        div.head_card
+          if canedit
+            div.edit_button(data-news-index= id)
+              a.btn_edit(href=`${id}/edit`) &#9998;
+          else 
+            div.edit_button(data-news-index= id)
+              a.btn_edit(href=`#` style="color: gray;") &#9998;
+          if canedit
+            div.close-button(data-news-index=id onclick=`removeNewsFrom(${id})`) &#10006;
+          else 
+            div.close-button(data-news-index=id style="color: gray;") &#10006;
+      p= content
+      div.tags= Array.from(tags).join(', ')
+      div.date= date
+      div.name= username
+      //- div.date= canedit
+      if canedit
+          div.two_btn
+            button.edit_news(data-news-index= index)
+              a.btn_edit_news(href=`${id}/edit`) Edit
+            div.remove_news(data-news-index=id onclick=`removeNewsFrom(${id})`) Remove
+      else 
+            div.two_btn
+    script(src="/exam.js") 

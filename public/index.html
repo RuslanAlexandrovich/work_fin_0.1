@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="412761115472-jdihj440pgr6j594hq9g4kf4vaa2ave2.apps.googleusercontent.com">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_line">
+            <div class="left_side"><a href="#" class="but_home">Home</a></div>
+            <div class="right_side">
+                <div id="userNameDiv"></div><span class="stolb">|</span>
+                <div id="buttonDiv"></div>
+                <div class="g_id_signout" id="signoutDiv" onclick="signOut()">Sign Out</div>
+            </div>
+        </div>
+
+        </div>
+    </header>
+
+    <div id="news-container"></div>
+
+    <div style="display: flex; flex-direction: column; margin-bottom: 10px; width: 20%;">
+        <input type="text" id="news-title-input" placeholder="Назва">
+        <textarea name="news_body" id="news-content-textarea" placeholder="Тіло новини" cols="30" rows="10"></textarea>
+        <input type="text" id="news-tags-input" placeholder="Тег для новини">
+        <button type="submit" id="send_form">SEND</button>
+    </div>
+
+    <footer>
+        <div class="foot_line">
+            <span class="about_author">Example A.A.</span>
+            <span class="about_author_mail"><a href="#">Example@mail.com</a></span>
+        </div>
+    </footer>
+
+    <script src="exam.js"></script>
+    <script src="googleSign.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+</body>
+
+</html>

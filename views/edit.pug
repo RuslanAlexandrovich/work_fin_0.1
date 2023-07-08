@@ -1,0 +1,15 @@
+html
+    head
+        title= title 
+        link(rel="stylesheet", href="/editStyle.css") 
+    body 
+        <div class="container_form">
+            form(onsubmit='return false;' class="form_class")
+                input(type="hidden" id="news-id-input" value=`${id}`)
+                input(type="text" id="news-title-input" placeholder="Назва" value=`${title}`)
+                textarea(name="news_body" id="news-content-textarea"  cols="30" rows="10")= content
+                input(type="text" id="news-tags-input" placeholder="Тег для новини" value=`${tags}`)
+            <button type="submit" id="send_form" value="SEND">Save</button>
+            <button type="button" id="cancel" value="SEND"><a class="btn_back" type="button"  href='http://127.0.0.1:3000'>Cancel</a></button>
+            </div>
+    script(src="/edit.js" type="text/javascript")

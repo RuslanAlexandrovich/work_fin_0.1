@@ -1,0 +1,23 @@
+.container_form{
+width: 30%;
+border: 1px solid black;
+padding: 10px;
+}
+.form_class{
+    display: flex;
+    flex-direction: column;
+}
+#send_form{
+    width: 100px;
+    padding: 0;
+}
+#cancel{
+    padding: 0;
+}
+.btn_back{
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid black; */
+    padding: 0 25px 0 25px;
+    cursor: default;
+}

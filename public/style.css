@@ -1,0 +1,155 @@
+.news-card{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 18.8%;
+    padding: 0 10px 10px 10px;
+}
+.news_container{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 18.8%;
+    padding: 0 10px 10px 10px;
+}
+
+.close-button{
+    width: 10px;
+    cursor: pointer;
+}
+.edit_button{
+    margin-right: 5px;
+}
+.edit_button a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.btn_edit{
+    text-decoration: none;
+    margin-right: 5px;
+    cursor: pointer;
+    color: black;
+}
+.header_line{
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.but_home{
+    text-decoration: none;
+}
+.but_sign{
+    text-decoration: none;
+}
+.foot_line{
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 0 10px 0 10px;
+}
+.header_plus{
+    display: flex; 
+    justify-content: space-between;
+}
+.head_card{
+    display: flex; 
+    justify-content: end; 
+    width: 30%;
+}
+.tags{
+    font-size: 12px;
+}
+.date{
+    font-size: 12px; 
+    margin-top: 10px;
+}
+.name{
+    font-size: 12px; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.about_author{
+    margin-right: 5px;
+}
+.header_plus h3 a{
+    color: black;
+}
+.header_plus h3 a:hover{
+    color: blue;
+    transition: 0.5 ease;
+}
+.two_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.edit_news{
+    width: 65px;
+    margin-right: 20px;
+    padding: 0;
+}
+.btn_edit_news{
+    padding: 0 20px 0 20px;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+.remove_news{
+    width: 63px;
+    height: 15px;
+    font-size: 13.5px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    padding: 0 5px 3px 5px;
+    cursor: default;
+}
+
+.remove_news:hover{
+    border: 1px solid black;
+    background-color: rgb(226, 226, 226);
+}
+.right_side{
+    display: flex;
+}
+.g_id_signout{
+    display: none;
+}
+#userNameDiv{
+    margin-right: 5px;
+}
+.g_id_signout{
+    margin-left: 5px;
+    cursor: pointer;
+    color: blue;
+}
+.g_id_signout:hover{
+    color: rgb(91, 91, 255);
+}
+
+/* .nsm7Bb-HzV7m-LgbsSe-BPrWId{
+color: #3c4043;
+cursor: pointer;
+text-align: center;
+white-space: nowrap;
+font-size: 11px;
+letter-spacing: 0.3px;
+flex-grow: 1;
+font-family: "Google Sans",arial,sans-serif;
+overflow: hidden;
+text-overflow: ellipsis;
+vertical-align: top;
+font-weight: 300;
+} */
